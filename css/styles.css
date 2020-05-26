@@ -18,12 +18,16 @@ body {
 #layout td {
     position:relative;
     text-align:center;
+    height:32%;
 }
 #layout td > img {
     /*max-height:32%;
     min-width:32%;*/
-    height:25%;
+    height:50%;
     margin:1em;
+}
+.controls > td {
+    height:initial;
 }
 #totalZone {
     background-color:#EFEFEF;
