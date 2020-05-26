@@ -7,6 +7,7 @@ body {
     position:relative;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+body { overscroll-behavior: contain; }
 #container {
     width:100%;
     height:100%;
