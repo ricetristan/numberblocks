@@ -14,11 +14,31 @@
                 <td><img id="nb4" alt="four" src="images/nb4.png"/></td>
             </tr>
             <tr>
-                <td><img id="nb5" alt="five" src="images/nb5.png"/></td>
-                <td id="totalZone" colspan="2">
+                <td></td>
+                <td colspan="2">
                     <div id="total">0</div>
                 </td>
+            </tr>
+            <tr>
+                <td><img id="nb5" alt="five" src="images/nb5.png"/></td>
+                <td id="totalZone" colspan="2">
+
+                </td>
                 <td><img id="nb6" alt="six" src="images/nb6.png"/></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td colspan="2">
+                    <img src="images/reset.png" class="reset" onclick="window.location.reload()" />
+                    <div id="toggleMode">
+                        <span class="modeLabel">-</span>
+                        <label class="switch">
+                            <input type="checkbox" id="mode" value="add" checked="checked" />
+                            <span class="slider"></span>
+                        </label>
+                        <span class="modeLabel">+</span>
+                    </div>
+                </td>
             </tr>
             <tr>
                 <td><img id="nb7" alt="seven" src="images/nb7.png"/></td>
@@ -30,6 +50,7 @@
     </div>
 
     <script type="text/javascript" src="js/dragula.min.js"></script>
+    <script type="text/javascript" src="js/confetti.browser.min.js"></script>
     <script type="text/javascript" src="js/dragdrop.js"></script>
   </body>
 </html>
