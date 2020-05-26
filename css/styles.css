@@ -15,7 +15,7 @@ body {
     margin:auto;
     height:100%;
 }
-#layout td {
+#layout td:not(.controls) {
     position:relative;
     text-align:center;
     height:32%;
@@ -26,7 +26,7 @@ body {
     height:50%;
     margin:1em;
 }
-.controls > td {
+.controls {
     height:initial;
 }
 #totalZone {
