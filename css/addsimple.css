@@ -1,0 +1,114 @@
+#layout {
+    margin:auto;
+    height:100%;
+}
+#layout td:not(.controls) {
+    position:relative;
+    text-align:center;
+    height:32%;
+}
+#layout td > img {
+    /*max-height:32%;
+    min-width:32%;*/
+    height:50%;
+    max-height:300px;
+    margin:1em;
+}
+.controls {
+    height:initial;
+}
+#totalZone {
+    background-color:#EFEFEF;
+    border-radius: 2em;
+    border: 1px solid #CCC;
+    height:100%;
+}
+#total {
+    text-align:center;
+    font-size:3em;
+    /*margin-bottom:24px;*/
+    margin-top:-64px;
+    font-weight:bold;
+    color:#686868;
+    text-shadow: 0px 2px 3px #000;
+}
+.reset {
+    float: right;
+    height: 48px !important;
+    margin: 0 !important;
+    cursor: pointer;
+}
+.holder {
+    position:relative;
+    display:flex;
+    flex-wrap: wrap;
+    max-width:300px;
+    justify-content:center;
+    margin:auto;
+}
+.block {
+    width:32px;
+    height:32px;
+    border:1px solid #000;
+    margin:0;
+}
+.holder img {
+    height: 96px !important;
+    position:absolute;
+    bottom:16px;
+}
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+} 
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+input:checked + .slider {
+    /*background-color: #2196F3;*/
+}
+input:focus + .slider {
+    /*box-shadow: 0 0 1px #2196F3;*/
+}
+input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+}
+#toggleMode {
+    float:left;
+}
+.modeLabel {
+    font-size: 1.8em;
+    font-weight: bolder;
+    line-height: 0.5em;
+    vertical-align: middle;
+    color:#686868;
+}

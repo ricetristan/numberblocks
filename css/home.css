@@ -1,0 +1,99 @@
+
+.logo { height:300px; }
+h1 { color:rgb(0, 79, 166); text-shadow: 0px 0px 2px #000; }
+h2 { color:rgba(0, 79, 166, 0.85); font-weight:normal; }
+/*.menu {
+    list-style-type:none;
+}
+.menu li {
+    width: 500px;
+    margin: auto;
+    margin-bottom:1em;
+    padding: 3em;
+    border-radius: 10px;
+    border:1px solid rgb(0, 79, 166);
+    color:#fff;
+    font-size: 1.3em;
+    cursor:pointer;
+    text-shadow: 0px 0px 2px #000;
+}*/
+/****** MENU ********/
+ul.menu {
+    position: relative;
+    /*-webkit-transform: rotate(-35deg) skew(20deg, 5deg);
+            transform: rotate(-35deg) skew(20deg, 5deg);*/
+    margin:auto;
+}
+ul.menu > li {
+    /*background: #000;*/
+    margin:auto;
+    color: #fff; /*#575757;*/
+    text-align: center;
+    height: 2.5em;
+    /*width: 4em;*/
+    width:400px;
+    vertical-align: middle;
+    font-size:1.2em;
+    line-height: 2.5em;
+    border-bottom: 1px solid #060606;
+    position: relative;
+    display: block;
+    margin-bottom:1em;
+    text-decoration: none;
+    text-shadow: 0px 0px 3px #000;
+    /*box-shadow: -2em 1.5em 0 #e1e1e1;*/
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+    cursor:pointer;
+}
+ul.menu > li:hover {
+    /*background: #ff6e42;*/
+    color: #fffcfb;
+    -webkit-transform: translate(0.9em, -0.9em);
+            transform: translate(0.9em, -0.9em);
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+    /*box-shadow: -2em 2em 0 #e1e1e1;*/
+}
+ul.menu > li:hover:before, .ul.menu > li:hover:after {
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+}
+ul.menu > li:hover:before {
+    background: #000; /*#b65234;*/
+    width: 1em;
+    top: .5em;
+    left: -1em;
+}
+ul.menu > li:hover:after {
+    background: #000; /* #b65234;*/
+    width: 1em;
+    bottom: -2.5em;
+    left: 1em;
+    height: 400px;/*4em*/;
+}
+ul.menu > li:before, ul.menu > li:after {
+    content: '';
+    position: absolute;
+    -webkit-transition: all .25s linear;
+    transition: all .25s linear;
+    width: .5em;
+}
+ul.menu > li:after {
+    height: 400px;/*4em;*/
+    background: #181818;
+    bottom: -2.25em;
+    left: 1.5em;
+    -webkit-transform: rotate(90deg) skew(0, 45deg);
+            transform: rotate(90deg) skew(0, 45deg);
+            transform-origin: 50% 90.5%;
+}
+ul.menu > li:before {
+    height: 2.5em;
+    background: #121212;
+    top: .25em;
+    left: -.5em;
+    -webkit-transform: skewY(-45deg);
+            transform: skewY(-45deg);
+}
+/********************/
