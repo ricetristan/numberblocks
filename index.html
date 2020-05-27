@@ -1,56 +1,18 @@
 <!doctype html>
 <html>
 <head>
-    <link rel="stylesheet" type="text/css" href="css/dragula.min.css" />
-    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1,maximum-scale=1, user-scalable=no">
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/home.css" />
 </head>
 <body>
     <div id="container">
-        <table id="layout">
-            <tr>
-                <td><img id="nb1" alt="one" src="images/nb1.png"/></td>
-                <td><img id="nb2" alt="two" src="images/nb2.png"/></td>
-                <td><img id="nb3" alt="three" src="images/nb3.png"/></td>
-                <td><img id="nb4" alt="four" src="images/nb4.png"/></td>
-            </tr>
-            <tr>
-                <td class="controls"></td>
-                <td colspan="2" class="controls">
-                    <div id="total">0</div>
-                </td>
-            </tr>
-            <tr>
-                <td><img id="nb5" alt="five" src="images/nb5.png"/></td>
-                <td id="totalZone" colspan="2">
-
-                </td>
-                <td><img id="nb6" alt="six" src="images/nb6.png"/></td>
-            </tr>
-            <tr>
-                <td class="controls"></td>
-                <td colspan="2" class="controls">
-                    <img src="images/reset.png" class="reset" onclick="window.location.reload()" />
-                    <div id="toggleMode">
-                        <span class="modeLabel">-</span>
-                        <label class="switch">
-                            <input type="checkbox" id="mode" value="add" checked="checked" />
-                            <span class="slider"></span>
-                        </label>
-                        <span class="modeLabel">+</span>
-                    </div>
-                </td>
-            </tr>
-            <tr>
-                <td><img id="nb7" alt="seven" src="images/nb7.png"/></td>
-                <td><img id="nb8" alt="eight" src="images/nb8.png"/></td>
-                <td><img id="nb9" alt="nine" src="images/nb9.png"/></td>
-                <td><img id="nb10" alt="ten" src="images/nb10.png"/></td>
-            </tr>
-        </table>
+        <img src="images/logo.png" class="logo" />
+        <h2>Fun games and learning with the Numberblocks characters</h2>
+        <ul class="menu">
+            <li class="red" onclick="location.href = 'addsimple.html'">Add or Subtract Numberblocks</li>
+            <li class="orange" onclick="location.href = 'equations.html'">Solve Equations with the Numberblocks</li>
+        </ul>
     </div>
-
-    <script type="text/javascript" src="js/dragula.min.js"></script>
-    <script type="text/javascript" src="js/confetti.browser.min.js"></script>
-    <script type="text/javascript" src="js/dragdrop.js"></script>
   </body>
 </html>
