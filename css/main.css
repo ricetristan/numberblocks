@@ -12,13 +12,14 @@ body {
     background-image:url('../images/tiles.png');
 }
 .back {
-    float: left;
     text-decoration: none;
     font-size: 5em;
-    margin: 0.4em;
-    margin-right: -5em;
+    /* margin: 0.4em; */
+    /* margin-right: -5em; */
     font-weight: bold;
     color: #464646;
+    text-align: left;
+    display: block;
 }
 .back:visited {
     color: #464646;

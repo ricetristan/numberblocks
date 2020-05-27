@@ -25,15 +25,17 @@
 .numwrapper {
     display:inline-block;
     vertical-align:middle;
+    width:20%;
 }
 .number {
     /*display: inline-block;*/
-    width: 250px;
-    height: 250px;
+    width: 100%;
+    min-height: 100px;
     border: 8px solid #464646;
     background-color: #fff;
     border-radius: 10px;
 }
 .number > img {
-    height:80%;
+    max-height: 80%;
+    max-width: 100%;
 }
