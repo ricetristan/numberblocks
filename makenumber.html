@@ -1,0 +1,48 @@
+<!doctype html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" type="text/css" href="css/dragula.min.css" />
+    <link rel="stylesheet" type="text/css" href="css/main.css" />
+    <link rel="stylesheet" type="text/css" href="css/makenumber.css" />
+</head>
+<body>
+    <div id="container">
+        <div id="numberblocks">
+            <img id="nb1" alt="one" src="images/nb1.png"/>
+            <img id="nb2" alt="two" src="images/nb2.png"/>
+            <img id="nb3" alt="three" src="images/nb3.png"/>
+            <img id="nb4" alt="four" src="images/nb4.png"/>
+            <img id="nb5" alt="five" src="images/nb5.png"/>
+            <img id="nb6" alt="six" src="images/nb6.png"/>
+            <img id="nb7" alt="seven" src="images/nb7.png"/>
+            <img id="nb8" alt="eight" src="images/nb8.png"/>
+            <img id="nb9" alt="nine" src="images/nb9.png"/>
+        </div>
+        <div id="makenumber">
+            <div class="numwrapper">
+                <div id="number1" class="number"></div>
+                <label id="number1label">Thousands</label>
+            </div>
+            <div class="numwrapper">
+                <div id="number2" class="number"></div>
+                <label id="number2label">Hundreds</label>
+            </div>
+            <div class="numwrapper">
+                <div id="number3" class="number"></div>
+                <label id="number3label">Tens</label>
+            </div>
+            <div class="numwrapper">
+                <div id="number4" class="number"></div>
+                <label id="number4label">Ones</label>
+            </div>
+            =
+            <span id="newnumber">0</span>
+        </div>
+        <a href="index.html" class="back">&lt;</a>
+    </div>
+    <script type="text/javascript" src="js/dragula.min.js"></script>
+    <script type="text/javascript" src="js/confetti.browser.min.js"></script>
+    <script type="text/javascript" src="js/makenumber.js"></script>
+</body>
+</html>

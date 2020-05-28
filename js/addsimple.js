@@ -16,7 +16,7 @@ drake.on('drop', function(el, target, source, sibling){
   if(!document.getElementById('mode').checked){ amount = -amount; }
   let total = increaseTotal(amount);
   target.innerHTML = '';
-  if(total > 0){
+  if(total >= 0){
     if(total <= 20){
       el.id = 'nb' + total;
       el.src = 'images/nb' + total + '.png';
@@ -60,7 +60,7 @@ function makeBlocks(amount){
     holder.appendChild(block);
   }
   let face = document.createElement('img');
-  face.src = 'images/nbface.png';
+  face.src = 'images/nbface' + Math.round(randomInRange(1, 5)) + '.png';
   holder.appendChild(face);
   return holder;
 }
